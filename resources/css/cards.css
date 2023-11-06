@@ -1,0 +1,33 @@
+.custom-card {
+    margin: 60px 30px 20px 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-card-content {
+    text-align: center;
+    padding: 20px; /* Aggiungi spazio tra il contenuto e il bordo della card */
+}
+
+.custom-card img {
+    max-width: 100%; /* L'immagine si adatterà alla larghezza della card */
+    height: auto; /* Imposta altezza automatica per mantenere il rapporto originale */
+    object-fit: fit;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(79, 76, 76, 0.1);
+}
+
+.custom-card .name {
+    color: rgba(255, 255, 255, 0.8); /* Aumenta l'opacità del testo del nome */
+    font-size: 18px; /* Aumenta la dimensione del font del nome */
+    margin: 10px 0; /* Leggermente aumenta il margine superiore e inferiore del nome */
+}
+
+.custom-card p {
+    margin: 8px 0 10px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+

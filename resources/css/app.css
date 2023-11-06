@@ -1,0 +1,286 @@
+@import "bootstrap";
+@import "animate.css";
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+@import "../../node_modules/flag-icon-css/css/flag-icons.css";
+
+/* COLORE TRASPARANTE */
+/* background: rgb(27 32 44 / 70%);
+  -webkit-backdrop-filter: blur(5px);
+  -moz-backdrop-filter: blur(5px);
+  -ms-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px); */
+
+/* sezione NAVBAR */
+.navbar {
+    /* background-image: -moz-linear-gradient(0deg, #5933b1 0%, #7941d4 100%);
+    background-image: -webkit-linear-gradient(0deg, #5933b1 0%, #7941d4 100%);
+    background-image: -ms-linear-gradient(0deg, #5933b1 0%, #7941d4 100%); */
+    background: linear-gradient(91.7deg, rgb(66, 33, 104) -4.3%, rgb(116, 93, 146) 101.8%);
+    /* background-color: #2866b1; */
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(0);
+}
+
+.navbar.navbar-hidden {
+    transform: translateY(-100%);
+}
+
+.navbar.navbar-expand-lg {
+    background-color: #2866b1;
+}
+
+.border-nav {
+    border-bottom: 4px solid #FFC107;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.575);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -ms-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+/* sezione BODY */
+body {
+    background-image: url('../../public/assets/images/background.png');
+    background-repeat: repeat;
+    color: #f9f9f9;
+    font-family: "Euclid Circular A", "Poppins";
+
+    /* SERVE PER TENERE IL FOOTER BASSO */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Altezza minima del corpo pari al 100% della viewport height */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* durata animazione testo "CardBazaar." */
+.animate__animated.animate__bounceInLeft {
+    --animate-duration: 1.25s;
+}
+
+/* durata animazione testo "Esplora" e "Categorie" */
+.animate__animated.animate__pulse {
+    --animate-duration: 500ms;
+}
+
+/* sezione ARTICLE */
+article {
+    display: flex;
+    gap: 16px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto 32px;
+    border-radius: 16px;
+    background-color: #272e3c;
+}
+
+article img {
+    height: 60px;
+}
+
+article name {
+    color: rgb(255 255 255 / 50%);
+}
+
+article p {
+    margin: 8px 0 10px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* sezione 1 HOMEPAGE  */
+.col-md-12 {
+    gap: 16px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto 32px;
+    border-radius: 12.5px;
+    background-color: #272e3c;
+}
+
+.col-md-12 img {
+    height: 60px;
+}
+
+.col-md-12 name {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.col-md-12 p {
+    margin: 8px 0 10px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.img-fluid {
+    border-radius: 5px;
+}
+
+/* sezione LOGIN */
+.login-section {
+    display: flex;
+    gap: 16px;
+    padding: 60px;
+    max-width: 900px;
+    margin: 0 auto 32px;
+    margin-top: 90px;
+    border-radius: 12.5px;
+    background: rgba(255, 255, 255, 0.575);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -ms-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+/* sezione REGISTRAZIONE */
+.register-section {
+    display: flex;
+    gap: 16px;
+    padding: 60px;
+    max-width: 900px;
+    margin: 0 auto 32px;
+    margin-top: 90px;
+    border-radius: 12.5px;
+    background: rgba(255, 255, 255, 0.575);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -ms-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+footer {
+    /* background-image: -moz-linear-gradient(0deg, #5933b1 0%, #7941d4 100%);
+    background-image: -webkit-linear-gradient(0deg, #5933b1 0%, #7941d4 100%);
+    background-image: -ms-linear-gradient(0deg, #5933b1 0%, #7941d4 100%); */
+    background: linear-gradient(91.7deg, rgb(66, 33, 104) -4.3%, rgb(116, 93, 146) 101.8%);
+    /* background-color: #2866b1; */
+    /* SERVE PER TENERE IL FOOTER BASSO */
+    flex-shrink: 0;
+}
+
+.border-footer {
+    border-top: 4px solid #FFC107;
+}
+
+/* SERVE PER TENERE IL FOOTER BASSO */
+.content {
+    flex: 1;
+}
+
+.nav-item .nav-link {
+    color: #fff;
+}
+
+.nav-item:hover .nav-link {
+    color: #FFC107;
+}
+
+.nav-item.active .nav-link,
+    .nav-item.current .nav-link {
+        color: #FFC107;
+    }
+/* sezione Show Announcements */
+/* .carousel-indicators{
+position:asoblute;
+bottom: -12%;
+} */
+
+/* sezione Show Announcements, Revisor */
+.dati-scheda {
+    padding: 0.5%;
+    border-radius: 12.5px;
+    background: rgba(255, 255, 255, 0.575);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -ms-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.work-bg {
+    background: rgba(255, 255, 255, 0.575);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -ms-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.notifica-verde {
+    background-color: green;
+    border-radius: 15px;
+    margin-left: 28%;
+    margin-right: 28%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.notifica-rossa-revisor {
+    background-color: rgb(212, 37, 37);
+    border-radius: 20px;
+    margin-left: 42%;
+    margin-right: 42%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.notifica-verde-revisor {
+    background-color: green;
+    border-radius: 20px;
+    margin-left: 42%;
+    margin-right: 42%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+
+.btnRegistrati {
+    background-color: black;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    width: 130px;
+    font-size: 13px;
+    color: white;
+    position: relative;
+    bottom: 8px;
+    transition: 0.5s;
+}
+
+.btnRegistrati :hover {
+    background-color: #4443ee;
+    color: black;
+}
+
+.bg-prew {
+    height: 300px;
+    width: 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 200px 300px;
+}
+
+/* @media (max-width: 760px) {
+    #carousel-show .carousel-control-prev,
+    #carousel-show .carousel-control-next {
+        display: none;
+    }
+} */
+
+.revisorCounter{
+    position:absolute;
+    top:23.4%;
+    left:60.8%;
+}
+@media (max-width: 470px) {
+    .revisorCounter{
+        display: none;
+        position:absolute;
+        top:52.0%;
+        left:18.8%;
+    }
+    }
